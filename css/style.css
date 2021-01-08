@@ -45,14 +45,14 @@ body {
 
 .header__menu-btn:hover {
     color: var(--white);
-    background-color: var(--light);
+    background-color: var(--dark);
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--white);
 }
 
 .intro {
     background: url(../images/bg-img.jpg) no-repeat center top;
-    background-size: 100%;
+    background-size: cover;
     height: 668px;
     color: var(--white);
     position: relative;
@@ -162,13 +162,17 @@ body {
     margin-left: 14px;
 }
 
+.promo {
+    height: 192px;
+}
+
 .promo__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.promo__block {
+.promo__texts {
     color: var(--white);
     width: 580px;
     padding: 71px 0;
@@ -191,8 +195,27 @@ body {
 .promo__btn {
     width: 200px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
-    color: #2B4074;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: var(--dark);
 }
+
+.promo__btn:hover {
+    color: var(--white);
+    background-color: var(--dark);
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+
+.hr {
+    color: var(--dark);
+    width: 99px;
+    border: solid 4px var(--dark);
+}
+
