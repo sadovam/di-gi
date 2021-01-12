@@ -19,7 +19,7 @@ body {
     background-color: var(--bg);
 }
 
-.btn {
+.btns {
     border: none;
     outline: none;
 }
@@ -41,7 +41,7 @@ body {
     color: var(--bg);
 }
 
-.btn1 {
+.btn {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
