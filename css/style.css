@@ -16,7 +16,6 @@ body {
     font-weight: normal;
     font-style: normal;
     color: var(--title);
-    background-color: var(--bg);
 }
 
 .btns {
@@ -61,6 +60,10 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.header {
+    background-color: var(--bg);
 }
 
 .header__inner {
@@ -198,6 +201,7 @@ body {
 
 .promo {
     height: 192px;
+    background-color: var(--bg);
 }
 
 .promo__inner {
@@ -545,6 +549,25 @@ body {
 
 .footer {
     height: 639px;
+    background-color: var(--bg);
+}
+
+.footer__inner {
+    display:flex;
+    flex-direction: column;
+}
+
+.footer__inner::before {
+    content: url(../images/logo-footer.png);
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: calc(50% - 115px);
+    background: var(--bg);
+    border-radius: 3px;
 }
 
 .footer__title {
