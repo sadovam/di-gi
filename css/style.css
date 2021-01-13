@@ -297,13 +297,14 @@ body {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1020px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
     margin: 0 auto 16px;
 }
 
 .menu__item {
-    width: 222px;
+    width: 23%;
     height: 255px;
     border: 5px solid transparent;
     display: flex;
@@ -323,6 +324,7 @@ body {
     line-height: 18px;
     color: var(--text);
     display: none;
+    max-width: 200px;
 }
 
 .menu__title {
@@ -424,7 +426,7 @@ body {
 }
 
 .video__texts {
-    margin-left:100px;
+    margin-left:10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -832,6 +834,23 @@ body {
         margin: 69px 0;
     }
 
+    .menu__item {
+        width: 47%;
+        height: 288px;
+    }
+
+    .services__inner {
+        max-width: 690px;
+    }
+
+    .services__texts {
+        padding-left: 0;
+    }
+
+    .services__text {
+        max-width: 690px;
+    }
+
     .news__photos {
         column-count: 2;
     }
@@ -840,7 +859,7 @@ body {
 @media only screen and (max-width: 786px) {
     
     .container {
-        max-width: 560px;
+        max-width: 460px;
     }
 
     .header__menu-btn {
@@ -885,6 +904,31 @@ body {
     .promo__btn {
         margin: 40px 0;
     }
+
+    .services__inner {
+        max-width: 460px;
+    }
+
+    .services__texts {
+        text-align: center;
+    }
+
+    .services__hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services__title {
+        padding-top: 24px;
+    }
+
+    .services__title-sub {
+        padding-top: 22px;
+    }
+
+    .menu__item {
+        height: 282px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -927,7 +971,42 @@ body {
         display: none;
     }
 
+    .services__inner {
+        max-width: 280px;
+    }
+
+    .services__title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 2px;
+    }
+
+    .services__title-sub {
+        font-size: 20px;
+        line-height: 24px;
+        min-width: 100px;
+    }
+
+    .services__text {
+        font-size: 15px;
+        line-height: 17px;
+        min-width: 100px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu__item {
+        width: 90%;
+    }
+
+    .video__image {
+        width: 100%;
+    }
+    
     .news__photos {
         column-count: 1;
     }
+
 }
