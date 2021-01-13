@@ -209,20 +209,18 @@ body {
 }
 
 .promo {
-    height: 192px;
     background-color: var(--bg);
 }
 
 .promo__inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .promo__texts {
     color: var(--fg);
-    width: 580px;
-    padding: 71px 0;
+    max-width: 580px;
+    padding-top: 57px;
 }
 
 .promo__title {
@@ -236,13 +234,14 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
-    padding-top: 4px;
+    padding: 10px 10px 10px 0;
 }
 
 .promo__btn {
     width: 200px;
     height: 50px;
     color: var(--bg);
+    margin: 71px 0;
 }
 
 .promo__btn:hover {
@@ -718,6 +717,25 @@ body {
         margin-left: 12px;
     }
 
+    .promo__texts {
+        padding-top: 40px;
+    }
+
+    .promo__title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .promo__text {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 20px;
+    }
+
+    .promo__btn {
+        margin: 55px 0;
+    }
+
     .services__inner {
         flex-wrap: wrap;
         max-width: 1200px;
@@ -777,6 +795,10 @@ body {
 
 @media only screen and (max-width: 1024px) {
     
+    .container {
+        max-width: 690px;
+    }
+    
     .intro__title {
         font-size: 60px;
         line-height: 60px;
@@ -791,6 +813,25 @@ body {
         padding: 50px 0 52px;
     }
 
+    .promo__texts {
+        padding-top: 60px;
+    }
+
+    .promo__title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .promo__text {
+        font-size: 16px;
+        line-height: 18px;
+        max-width: 400px;
+    }
+
+    .promo__btn {
+        margin: 69px 0;
+    }
+
     .news__photos {
         column-count: 2;
     }
@@ -798,6 +839,10 @@ body {
 
 @media only screen and (max-width: 786px) {
     
+    .container {
+        max-width: 560px;
+    }
+
     .header__menu-btn {
         margin-right: 20px;
     }
@@ -822,10 +867,32 @@ body {
         display: block;
         margin: 7px auto 0;
     }
+
+    .promo__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo__texts {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .promo__text {
+        max-width: 560px;
+    }
+
+    .promo__btn {
+        margin: 40px 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     
+    .container {
+        max-width: 280px;
+    }
+
     .header__logo-link {
         margin-left: 25px;
     }
