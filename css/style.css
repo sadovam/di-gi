@@ -667,6 +667,28 @@ body {
     line-height: 20px;
 }
 
+.bottom {
+    text-align: right;
+    padding: 10px 136px;
+}
+
+.bottom__link-up {
+    color: var(--title);
+    display: inline-block;
+    text-align: end;
+    font-weight: normal;
+}
+
+.bottom__arrow-up {
+    display: inline-block;
+    border-top: 2px solid var(--title);
+    border-right: 2px solid var(--title);
+    width: 14px;
+    height: 14px;
+    transform: rotate(-45deg);
+    
+}
+
 @media only screen and (max-width: 1200px) {
     
     .container {
@@ -821,6 +843,10 @@ body {
     
     .footer__widget {
         margin: 57px 0;
+    }
+
+    .bottom {
+        padding: 10px;
     }
 }
 
