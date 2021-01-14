@@ -571,7 +571,6 @@ body {
 }
 
 .footer {
-    height: 639px;
     background-color: var(--bg);
 }
 
@@ -635,10 +634,10 @@ body {
 .footer__widgets {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
 }
 
 .footer__widget {
+    margin: 80px 0;
     display: inline-block;
     width: 100%;
 }
@@ -809,7 +808,6 @@ body {
 
     .footer__title {
         font-size: 36px;
-        line-height: 32px;
     }
 
     .footer__widget-title {
@@ -819,6 +817,10 @@ body {
 
     .footer__link, .footer__link>address {
         font-size: 16px ;
+    }
+    
+    .footer__widget {
+        margin: 57px 0;
     }
 }
 
@@ -934,6 +936,28 @@ body {
 
     .testimonial__pagination {
         padding: 40px 0 86px;
+    }
+
+    .footer__title {
+        padding-top: 114px;
+    }
+
+    .footer__icon {
+        font-size: 22px;
+    }
+
+    .footer__social {
+        margin-top: 40px;
+    }
+
+    .footer__widgets {
+        flex-wrap: wrap;
+        margin: 45px 0;
+    }
+
+    .footer__widget {
+        margin-top: 25px;
+        width: 45%;
     }
 }
 
@@ -1069,6 +1093,24 @@ body {
     .testimonial__pagination {
         padding-bottom: 91px;
     }
+
+    .footer__title {
+        font-size: 24px;
+        line-height: 26px;  
+        padding-top: 84px;
+    }
+
+    .footer__icon {
+        font-size: 17px;
+    }
+
+    .footer__widgets {
+        margin: 25px 0 90px;
+    }
+
+    .footer__widget {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1194,4 +1236,35 @@ body {
         padding-bottom: 85px;
     }
 
+    .footer__title {
+        font-size: 20px;
+        line-height: 22px; 
+        text-align: center; 
+    }
+
+    .footer__icon {
+        font-size: 24px;
+    }
+
+    .footer__social {
+        flex-direction: column;
+    }
+
+    .footer__icon-link, .footer__icon-link + .footer__icon-link {
+        border: none;
+    }
+
+    .footer__widgets {
+        margin: 45px 0;
+    }
+
+    .footer__widget {
+        margin: 25px auto 0;
+        width: 90%;
+        text-align: center; 
+    }
+
+    .footer__link {
+        margin-top: 22px;
+    }
 }
