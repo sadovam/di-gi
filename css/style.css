@@ -490,8 +490,8 @@ body {
 
 .news__photo {
     position: relative;
-    margin-bottom: 20px;
     width: 270px;
+    margin: 0 auto 20px;
 }
 
 .news__link {
@@ -786,6 +786,15 @@ body {
 
     .news__photos {
         column-count: 3;
+        margin-top: 89px;
+    }
+
+    .news__title {
+        margin-top: 65px;
+    }
+
+    .news__hr {
+        margin-top: 29px;
     }
 
     .testimonial__text {
@@ -899,7 +908,16 @@ body {
 
     .news__photos {
         column-count: 2;
+        margin-top: 40px;
+        padding-bottom: 40px;
     }
+
+    .news__title {
+        font-size: 36px;
+        line-height: 38px;
+        margin-top: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1018,7 +1036,19 @@ body {
     .video__btn {
         margin: 56px 0 53px;
     }
-    
+
+    .news__photo, .news__image {
+        width: 100%;
+    }
+
+    .news__title {
+        font-size: 48px;
+    }
+
+    .news__hr {
+        margin-top: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1124,6 +1154,10 @@ body {
     
     .news__photos {
         column-count: 1;
+    }
+
+    .news__title {
+        font-size: 24px;
     }
 
 }
