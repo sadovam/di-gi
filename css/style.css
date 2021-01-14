@@ -426,12 +426,17 @@ body {
 
 .video__inner {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 80px;
+    margin: 80px 0;
+}
+
+.video__image {
+    width: 45%;
 }
 
 .video__texts {
-    margin-left:10px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -455,7 +460,6 @@ body {
     color: var(--news-bg);
     background-color: var(--bg);
     padding: 21px 0 0 35px;
-    margin-bottom: 80px;
 }
 
 .video__btn:hover {
@@ -866,12 +870,39 @@ body {
         line-height: 23px;
     }
 
+    .video__title {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .video__text {
+        line-height: 18px;
+    }
+
+    .video__image {
+        width: 35%;
+        height: 35%;
+        margin-bottom: 130px;
+    }
+
+    .video__texts{
+        width: 60%;
+    }
+
+    .video__btn {
+        margin-left: calc(10% - 100px);
+    }
+
+    .video__inner {
+        margin-bottom: 140px;
+    }
+
     .news__photos {
         column-count: 2;
     }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
     
     .header__menu-btn {
         margin-right: 20px;
@@ -953,6 +984,41 @@ body {
         width: 50px;
         height: 50px;
     }
+
+    .video__inner {
+        margin-bottom: 0px;
+    }
+
+    .video__text {
+        font-size: 16px;
+    }
+
+    .video__image, .video__texts {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .video__texts {
+        align-items: center;
+    }
+
+    .video__title {
+        margin-top: 40px;
+    }
+
+    .video__hr {
+        margin-top: 20px;
+    }
+
+    .video__text {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .video__btn {
+        margin: 56px 0 53px;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
@@ -1040,8 +1106,20 @@ body {
         height: 26px;
     }
 
-    .video__image {
-        width: 100%;
+    .video__title {
+        font-size: 24px;
+    }
+
+    .video__hr {
+        width: 45px;
+    }
+
+    .video__text {
+        margin-top: 20px;
+    }
+
+    .video__btn {
+        margin: 90px 0 40px;
     }
     
     .news__photos {
