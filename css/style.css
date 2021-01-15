@@ -492,6 +492,7 @@ body {
     position: relative;
     width: 270px;
     margin: 0 auto 20px;
+    position: relative;
 }
 
 .news__link {
@@ -506,6 +507,18 @@ body {
     left: 0;
 }
 
+.news__info {
+    position: absolute;
+    top: calc(40% - 30px);
+    right: calc(50% - 20px);
+    background-color: transparent;
+    display: none;
+}
+
+.news__info:hover {
+    cursor: pointer;
+}
+
 .news__photo:hover {
     outline: 10px solid var(--bg);
     outline-offset: -10px;
@@ -516,6 +529,11 @@ body {
     background-color: var(--bg);
     color: var(--fg);
 }
+
+.news__photo:hover > .news__info {
+    display: block;
+}
+
 
 .testimonial {
     background-color: var(--fg);
