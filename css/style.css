@@ -312,10 +312,12 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    transition: border 1s ease-out;
 }
 
 .menu__link {
     display: none;
+    
 }
 
 .menu__text {
@@ -337,16 +339,25 @@ body {
     color: var(--title);
 }
 
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
 .menu__item:hover {
     border: 5px solid var(--bg);
 }
 
 .menu__item:hover > .menu__link {
     display: block;
+    animation: show 450ms ease-in-out both;
+    
 }
 
 .menu__item:hover > .menu__text {
     display: block;
+    animation: show 550ms ease-in-out both;
 }
 
 .works {
@@ -418,6 +429,7 @@ body {
 
 .works__example:hover .works__hover{
     display: block;
+    animation: show 550ms ease-in-out both;
 }
 
 .video {
@@ -493,6 +505,7 @@ body {
     width: 270px;
     margin: 0 auto 20px;
     position: relative;
+    transition: outline 1s ease-out;
 }
 
 .news__link {
@@ -505,6 +518,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    transition: bottom 550ms ease-out, background-color 1s ease-out;
 }
 
 .news__info {
@@ -532,6 +546,7 @@ body {
 
 .news__photo:hover > .news__info {
     display: block;
+    animation: show 550ms ease-in-out both;
 }
 
 
