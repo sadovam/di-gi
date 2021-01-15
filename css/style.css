@@ -312,10 +312,12 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    transition: border 1s ease-out;
 }
 
 .menu__link {
     display: none;
+    
 }
 
 .menu__text {
@@ -337,16 +339,25 @@ body {
     color: var(--title);
 }
 
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
 .menu__item:hover {
     border: 5px solid var(--bg);
 }
 
 .menu__item:hover > .menu__link {
     display: block;
+    animation: show 450ms ease-in-out both;
+    
 }
 
 .menu__item:hover > .menu__text {
     display: block;
+    animation: show 550ms ease-in-out both;
 }
 
 .works {
@@ -418,6 +429,7 @@ body {
 
 .works__example:hover .works__hover{
     display: block;
+    animation: show 550ms ease-in-out both;
 }
 
 .video {
@@ -492,6 +504,12 @@ body {
     position: relative;
     width: 270px;
     margin: 0 auto 20px;
+    position: relative;
+    transition: outline 1s ease-out;
+}
+
+.news__image {
+    border-radius: 4px;
 }
 
 .news__link {
@@ -504,6 +522,19 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    transition: bottom 550ms ease-out, background-color 1s ease-out;
+}
+
+.news__info {
+    position: absolute;
+    top: calc(40% - 30px);
+    right: calc(50% - 20px);
+    background-color: transparent;
+    display: none;
+}
+
+.news__info:hover {
+    cursor: pointer;
 }
 
 .news__photo:hover {
@@ -516,6 +547,12 @@ body {
     background-color: var(--bg);
     color: var(--fg);
 }
+
+.news__photo:hover > .news__info {
+    display: block;
+    animation: show 550ms ease-in-out both;
+}
+
 
 .testimonial {
     background-color: var(--fg);
