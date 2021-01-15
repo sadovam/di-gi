@@ -7,7 +7,7 @@
   <meta property="og:title" content="DiGi-digital agensy: Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере." />
   <meta property="og:type" content="website" /> 
   <meta property="og:url" content="https://sadovam.github.io/level1/" />
-  <meta property="og:image" content="images/social.jpg" />
+  <meta property="og:image" content="https://sadovam.github.io/level1/images/social.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
   <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi, fuga cumque 
@@ -19,8 +19,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"> 
   <title>DiGi-digital agensy</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  
   <script src="https://kit.fontawesome.com/c5b7962841.js" crossorigin="anonymous"></script>
+  
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+   <!-- Default Theme -->
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
@@ -34,25 +40,38 @@
   <section class="intro" id="intro">
 
     <div class="container">
-      <div class="intro__inner">
-        <h1 class="intro__title">МЫСЛИ<br>ГЛОБАЛЬНО</h1>
-        <p class="intro__text">Di Gі - это диджитал агентство полного цикла, 
-          направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-        <hr class="hr intro__hr">
-        <a href="#" class="intro__link-more btn">ПОДРОБНЕЕ</a>
-        <div class="pagination intro__pagination">
-          <div class="pagination__oval"></div>
-          <div class="pagination__oval pagination__oval_active"></div>
-          <div class="pagination__oval"></div>
+      
+        <div class="owl-carousel owl-theme" id="intro__owl">
+          <div class="intro__inner">
+            <h1 class="intro__title">МЫСЛИ<br>ГЛОБАЛЬНО</h1>
+            <p class="intro__text">Di Gі - это диджитал агентство полного цикла, 
+              направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
+            <hr class="hr intro__hr">
+            <a href="#" class="intro__link-more btn">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="intro__inner">
+            <h1 class="intro__title">ПОТРЕБЛЯЙ<br>ОТВЕТСТВЕННО</h1>
+            <p class="intro__text">Di Gі - это диджитал агентство полного цикла, 
+              направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
+            <hr class="hr intro__hr">
+            <a href="#" class="intro__link-more btn">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="intro__inner">
+            <h1 class="intro__title">ШАПКУ<br>НЕ ЗАБУДЬ</h1>
+            <p class="intro__text">Di Gі - это диджитал агентство полного цикла, 
+              направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
+            <hr class="hr intro__hr">
+            <a href="#" class="intro__link-more btn">ПОДРОБНЕЕ</a>
+          </div>
         </div>
-      </div>
+      
     </div>
 
     <div class="intro__arrows">
-      <button class="intro__arrow-btn btns">
+      <button class="intro__arrow-btn btns previous">
         <div class="intro__arrow intro__left-arrow"></div>
       </button>
-      <button class="intro__arrow-btn btns">
+      <button class="intro__arrow-btn btns next">
         <div class="intro__arrow intro__right-arrow"></div>
       </button>
     </div>
@@ -312,15 +331,22 @@
 
   <section class="testimonial" id="testimonial">
     <div class="container">
-      <div class="testimonial__inner">
-        <h2 class="testimonial__title"><i class="fas fa-quote-right"></i></h2>
-        <q class="testimonial__text">Если нужно создавать либо повышать имидж компании,<br> 
-          то <span>диджитал-маркетинг</span> является наиболее подходящим</q>
-        <p class="testimonial__author">- Маргарита Акулич</p>
-        <div class="pagination testimonial__pagination">
-          <div class="pagination__oval"></div>
-          <div class="pagination__oval pagination__oval_active"></div>
-          <div class="pagination__oval"></div>
+      <div id="testimonial__owl" class="owl-carousel owl-theme1">
+        <div class="testimonial__inner">
+          <h2 class="testimonial__title"><i class="fas fa-quote-right"></i></h2>
+          <q class="testimonial__text">Если нужно создавать либо повышать имидж компании,<br> 
+            то <span>диджитал-маркетинг</span> является наиболее подходящим</q>
+          <p class="testimonial__author">- Маргарита Акулич</p>
+        </div>
+        <div class="testimonial__inner">
+          <h2 class="testimonial__title"><i class="fas fa-quote-right"></i></h2>
+          <q class="testimonial__text"><span>Тщательное планирование</span>  — ключ к безопасному и быстрому путешествию.</q>
+          <p class="testimonial__author">- Одиссей</p>
+        </div>
+        <div class="testimonial__inner">
+          <h2 class="testimonial__title"><i class="fas fa-quote-right"></i></h2>
+          <q class="testimonial__text">Одна из радостей путешествия — это возможность <span>посетить новые города</span> и познакомиться с новыми людьми.</q>
+          <p class="testimonial__author">- Чингисхан</p>
         </div>
       </div>
     </div>
@@ -371,6 +397,8 @@
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Include js plugin -->
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
