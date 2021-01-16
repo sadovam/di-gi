@@ -150,7 +150,7 @@ body {
     color: var(--title);
 }
 
-.owl-pagination {
+.owl-theme .owl-controls .owl-pagination {
     padding: 124px 0 78px;
 }
 
@@ -588,7 +588,7 @@ body {
     line-height: 28px;  
 }
 
-.owl-theme1 .owl-controls.clickable .owl-pagination {
+.owl-theme1 .owl-controls .owl-pagination {
     padding: 80px 0 133px;
 }
 
@@ -753,7 +753,7 @@ body {
         margin-top: 12px;
     }
 
-    .owl-pagination {
+    .owl-theme .owl-controls .owl-pagination {
         padding: 112px 0 85px;
     }
 
@@ -894,7 +894,7 @@ body {
         margin-top: 32px;
     }
 
-    .owl-pagination {
+    .owl-theme .owl-controls .owl-pagination {
         padding: 50px 0 52px;
     }
 
@@ -992,7 +992,7 @@ body {
         padding-top: 40px;
     }
 
-    .owl-theme1 .owl-controls.clickable .owl-pagination {
+    .owl-theme1 .owl-controls .owl-pagination {
         padding: 40px 0 86px;
     }
 
@@ -1148,7 +1148,7 @@ body {
         margin-top: 20px;
     }
 
-    .owl-theme1 .owl-controls.clickable .owl-pagination {
+    .owl-theme1 .owl-controls .owl-pagination {
         padding-bottom: 91px;
     }
 
@@ -1199,7 +1199,7 @@ body {
         display: none;
     }
 
-    .owl-pagination {
+    .owl-theme .owl-controls .owl-pagination {
         padding: 35px 0 20px;
     }
 
@@ -1290,7 +1290,7 @@ body {
         padding-top: 20px;
     }
 
-    .owl-theme1 .owl-controls.clickable .owl-pagination {
+    .owl-theme1 .owl-controls .owl-pagination {
         padding-bottom: 85px;
     }
 
